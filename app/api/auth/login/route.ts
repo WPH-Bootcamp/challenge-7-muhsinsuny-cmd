@@ -6,7 +6,6 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { email, password } = body;
 
-    // 1️⃣ Validasi sederhana
     if (!email || !password) {
       return NextResponse.json(
         { message: 'Email dan password wajib diisi' },
@@ -29,7 +28,6 @@ export async function POST(req: Request) {
       );
     }
 
-    // 3️⃣ Kembalikan data user ke frontend
     return NextResponse.json({
       user: {
         name: data.user.name,

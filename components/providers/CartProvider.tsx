@@ -25,20 +25,6 @@ const CartContext = createContext<CartContextType | null>(null);
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
 
-  // const addToCart = (item: MenuItem) => {
-  //   setCart((prev) => {
-  //     const existing = prev.find((c) => c.id === item.id);
-
-  //     if (existing) {
-  //       return prev.map((c) =>
-  //         c.id === item.id ? { ...c, qty: c.qty + 1 } : c
-  //       );
-  //     }
-
-  //     return [...prev, { ...item, qty: 1 }];
-  //   });
-  // };
-
   const addToCart = (item: MenuItem) => {
     setCart((prev) => {
       const existing = prev.find((c) => c.id === item.id);

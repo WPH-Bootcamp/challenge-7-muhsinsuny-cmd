@@ -3,7 +3,6 @@
 import { Star, Share2, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-// import { RestaurantDetail } from '@/types/restaurant';
 
 export function HeroDetail({ image }: { image?: string }) {
   return (
@@ -59,23 +58,3 @@ export function HeroDetail({ image }: { image?: string }) {
 }
 
 export default HeroDetail;
-
-// 'use client';
-
-// import Image from 'next/image';
-
-// export default function HeroDetail({ image }: { image?: string }) {
-//   return (
-//     <div className='mx-auto max-w-7xl px-6 pt-6'>
-//       <div className='relative h-75 w-full overflow-hidden rounded-2xl'>
-//         {image && (
-//           <Image
-//             alt='Restaurant'
-//             src={image}
-//             className='h-full w-full object-cover'
-//           />
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
