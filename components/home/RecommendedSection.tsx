@@ -1,8 +1,5 @@
 'use client';
 
-// import { useBestSellerQuery } from '@/services/queries/restoQueries';
-// import Link from 'next/link';
-// import RestaurantCard from '@/components/home/RestaurantCard';
 import { useMenusQuery } from '../../services/queries/useMenusQuery';
 import RestaurantInfoCard from '../restaurant/RestaurantDetailPage/RestaurantInfoCard';
 

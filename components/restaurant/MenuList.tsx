@@ -1,50 +1,13 @@
-// import { Button } from '@/components/ui/button';
-// import Image from 'next/image';
-
-// const menus = Array.from({ length: 8 });
-
-// export default function MenuList() {
-//   return (
-//     <section className='mb-12'>
-//       <h2 className='mb-4 text-xl font-semibold'>Menu</h2>
-
-//       <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
-//         {menus.map((_, i) => (
-//           <div key={i} className='rounded-2xl border bg-white p-3 shadow-sm'>
-//             <Image
-//               src='https://images.unsplash.com/photo-1550547660-d9450f859349'
-//               className='h-32 w-full rounded-xl object-cover'
-//               alt='Menu Item'
-//               width={200}
-//               height={200}
-//             />
-
-//             <h3 className='mt-3 font-semibold'>Burger Deluxe</h3>
-//             <p className='text-sm text-gray-500'>Rp 45.000</p>
-
-//             <Button size='sm' className='mt-3 w-full'>
-//               Add
-//             </Button>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 'use client';
 
-// import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { RestaurantDetail } from '@/types/restaurant';
-// import { useState } from 'react';
 
 export default function MenuList({
   menus,
 }: {
   menus: RestaurantDetail['menus'];
 }) {
-  // const [count, setCount] = useState<Record<number, number>>({});
   return (
     <section className='mb-12'>
       <h2 className='mb-4 text-xl font-semibold'>Menu</h2>

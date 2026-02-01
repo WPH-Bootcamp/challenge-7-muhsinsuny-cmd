@@ -1,9 +1,8 @@
-// import { Star } from 'lucide-react';
-
 'use client';
 
 import { Star } from 'lucide-react';
 import { RestaurantDetail } from '@/types/restaurant';
+import Image from 'next/image';
 
 export default function ReviewList({
   reviews,
@@ -31,7 +30,7 @@ export default function ReviewList({
             <div className='flex items-center gap-3 mb-2'>
               <div className='w-14 h-14 rounded-full overflow-hidden md:h-16 md:w-16'>
                 {review.user.avatar || review.user.name ? (
-                  <img
+                  <Image
                     src={
                       review.user.avatar ||
                       `https://ui-avatars.com/api/?name=${encodeURIComponent(

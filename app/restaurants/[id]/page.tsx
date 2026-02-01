@@ -4,9 +4,7 @@ import { notFound } from 'next/navigation';
 import RestaurantInfo from '@/components/restaurant/Info';
 import Gallery from '@/components/restaurant/Gallery';
 import ReviewList from '@/components/restaurant/ReviewList';
-// import CardMenu from '@/components/restaurant/RestaurantDetailPage/MenuList/CardMenu';
 import { RestaurantDetail } from '@/types/restaurant';
-// import MenuList from '@/components/restaurant/MenuList';
 import MenuList from '@/components/restaurant/RestaurantDetailPage/MenuList/MenuList';
 import { MenuItem } from '@/services/queries/useMenusQuery';
 
@@ -32,7 +30,6 @@ export async function Page({ params }: PageProps) {
 
   const result = await res.json();
 
-  // 🔥 INI KUNCI UTAMA
   const restaurant: RestaurantDetail = result.data;
 
   if (!restaurant) {
